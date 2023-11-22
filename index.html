@@ -5,30 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  media="screen" rel="stylesheet" href="style/style.css"> 
     <title>Coding Machine</title>
-    <div class="topBar">
-        <img src="assets/logo.png" id="logo" alt="logo" class="logo">
-    <nav>
-        <ul class="navbar">
-            <li><a href="">Video</a></li>
-            <li><a href="">Presentation</a></li>
-            <li><a href="">Rules</a></li>
-            <li><a href="">Equipment</a></li>
-            <li><a href="">List</a></li>
+    <div class="header-container">
+        <div class="topBar">
+            <img src="assets/logo.png" id="logo" alt="logo" class="logo">
+        <nav>
+            <ul class="navbar">
+                <li><a href="">Video Presentation</a></li>
+                <li><a href="">Rules of the game</a></li>
+                <li><a href="">Equipment List</a></li>
 
-        </ul>
-    </nav>
-    </div>
-    <div class="presentation-container">
-        <img src="assets/board.png" id="board" alt="presentation" class="board">
-        <div class="text-presentation">
-        <h1 id="game-name">&lt;CodingMachine/&gt;</p></h1>
-        <p class="resume">
-            An interactive journey into HTML & CSS where learning meets playfulness. Foster collaboration, fuel friendly competition. Explore concepts, apply knowledge, conquer challenges!"
+            </ul>
+        </nav>
+        </div>
+        <div class="presentation-container">
+            <img src="assets/box-mockup.png" id="mockup-box" alt="presentation" class="board">
+            <div class="text-presentation">
+                <h1 id="game-name">&lt;CodingMachine/&gt;</p></h1>
+                <p id="resume">
+                        An interactive journey into HTML & CSS where learning meets playfulness. Foster collaboration, fuel friendly competition. Explore concepts, apply knowledge, conquer challenges !"
 
-        </p>
-    </div>
+                </p>
+            </div>
+        </div>
     </div>
 </head>
 <body>
+
+<section class="video-rules">
+    <h2 id="title-video">Video presentation</h2>
+    <div class="video-container">
+
+        <iframe width="560" id="video-youtube" height="315" src="https://www.youtube.com/embed/cBKGKkQnI94?si=TR71N1mVcshdHG-b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="container-rules">
+        <div class="mockup-images">
+            <img src="assets/board.png" alt="Image 1">
+            <img src="assets/board.png" alt="Image 2">
+            <img src="assets/board.png" alt="Image 3">
+            <img src="assets/board.png" alt="Image 4">
+        </div>
+        <div class="rules">
+            <h2 id="title-rules">Rules of the game</h2>
+            <p id="text-rules">
+    
+                Each participant has a robot (it is your pawn), the objective is to keep their robot alive, to do so, you have to answer some questions and some challenges. There is a modular life point system, so you can choose as much as you want. Each player has a certain number of lives at the beginning of the game, it’s represented by a stack. When you answer a question wrong you lose one of them. You can win them with certain events on the board, but be careful you can lose some too. When you finish the board, you go back to the beginning of it. The last robot alive wins the game ! </p>
+                <div class="container-download">
+                    <h4 id="download"><img src="assets/arrow.png" id="arrow">Download the rules in pdf</h4>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section class="equipment">
+    <h2 id="title-equipment">Equipment List</h2>
+    <div class="list-equipment">
+        <div class="equipment-container">
+            <img src="assets/board.png" alt="board" class="board">
+            <p id="text-box">1 board</p>
+        </div>
+        <div class="equipment-container">
+            <img src="assets/cartes.png" alt="cartes" class="cartes">
+
+            <p id="text-box">250 cards</p>
+        </div>
+        <div class="equipment-container">
+            <img src="assets/frame copie.png" alt="frame" class="frame">
+            <p id="text-box">2 dices, 8 pawns, <br>1 hourglass</p>
+        </div>
+        <div class="equipment-container">
+            <img src="assets/battery.svg" alt="battry" class="battery">
+            <p id="text-box">Batteries</p>
+        </div>
+    </div>
+</section>
 </body>
+<section class="footer">
+<img src="assets/footer.png" id="footer" alt="footer">
+
+
+</section>
+
+
 </html>

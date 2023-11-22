@@ -1,24 +1,48 @@
 * {
-    background-color: white;
     margin: 0;
     padding: 0;
+}
 
+@font-face {
+    font-family: "Consolas";
+    font-style: normal;
+    src: url("../fonts/CONSOLA.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Consolas-title";
+    font-style: normal;
+    src: url("../fonts/consolaz.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "calibri";
+    font-style: normal;
+    src: url("../fonts/calibri-regular.ttf") format("truetype");
 }
 
 .topBar {
     display: flex;
-    align-items: center;    
-    justify-content: space-between ;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+}
+
+.header-container {
+    background: url('assets/background.svg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #98D6F1;
+    padding-bottom: 5vh;
 }
 #logo {
-    width: 15%;
     height: 15%;
-    margin-top: 2vh;
-    margin-left: 10vw;
+    width: 15%;
+
 }
 
 .topBar .navbar {
-    margin-right: 35vw;
+    font-family: 'Consolas', sans-serif;
+    color: #1C4351;
+
 }
 
 .topBar .navbar li {
@@ -31,19 +55,157 @@
 .topBar .navbar li a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
 }   
 
 .presentation-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#board {
-    width: 30%;
-    height: 30%;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    margin-top: 15vh;
 }
 
-.game-name resume {
-    max-width: 20%;
+#mockup-box {
+    width: 40%;
+    height: 40%;
+    
+}
+
+ #resume {
+    font-family: 'calibri', sans-serif;
+    color: #1C4351;
+    font-size: 1vw;
+    max-width: 50%;
+    text-align: center;
+    
+ }
+
+ #game-name {
+    font-family: 'Consolas-title', sans-serif;
+    margin-left: 1vw;
+    font-size: 3vw;
+    color: #1C4351;
+ 
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    margin-bottom: 8vh;;
+}
+#title-video {
+    font-family: 'Consolas', sans-serif;
+    color: #1C4351;
+    text-align: center;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+}
+
+#video-youtube {
+    height: 850px;
+    width: 1520px;
+}
+
+.container-rules {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 8vh;
+
+}
+.mockup-images img {
+    width: 20%;
+    height: 20%;
+    justify-content: space-between;
+}
+.mockup-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.container-rules #title-rules {
+    font-family: 'Consolas', sans-serif;
+    color: #1C4351;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+}
+
+.container-rules #text-rules {
+    font-family: 'calibri', sans-serif;
+    color: #1C4351;
+    font-size: 1vw;
+    max-width: 50%;
+}
+
+#arrow {
+    background-color: red;
+    border-radius: 50%;
+    height: 12px;
+    width: 10px;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.container-download {
+    font-family: 'Consolas', sans-serif;
+    color: #1C4351;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 4vh;
+    margin-top: 1.2vh;
+}
+
+.container-download #download {
+    text-decoration: underline;
+    margin-top: 0.5vh;
+}
+
+.equipment {
+    background-color: #00916C;
+    color: white;
+
+}
+.equipment h2 {
+    font-family: 'Consolas', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 4vh;
+    padding-top: 4vh;
+}
+
+.list-equipment {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.equipment img {
+    width: 60%;
+    height: 60%;
+    justify-content: space-between;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+}
+.equipment-container {
+    box-sizing: border-box; 
+    border-radius: 15px;
+    font-family: 'Consolas-title', sans-serif;
+    color: #1C4351;
+    margin: auto;
+    margin-bottom: 8vh;
+    font-size: 20px;
+    text-align: center;
+    background-color:#FBFBEA;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+
+
+.footer {
+    background-color: #00916C;
 }
