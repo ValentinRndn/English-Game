@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -34,14 +35,14 @@
     padding-bottom: 5vh;
 }
 #logo {
-    height: 15%;
-    width: 15%;
+    height: 20%;
+    width: 20%;
 
 }
 
 .topBar .navbar {
     font-family: 'Consolas', sans-serif;
-    color: #1C4351;
+    color:#1C4351;
 
 }
 
@@ -54,16 +55,23 @@
 
 .topBar .navbar li a {
     text-decoration: none;
-    color: black;
-    font-size: 25px;
+    color: #1C4351;
+    font-size: 30px;
 }   
+
+.topBar .navbar li a:hover {
+    color: #00916C;
+    transition: 0.5s;
+}
 
 .presentation-container {
     display: flex;
     justify-content: center; /* Centrage horizontal */
     align-items: center; /* Centrage vertical */
-    margin-top: 15vh;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
 }
+
 
 #mockup-box {
     width: 40%;
@@ -74,17 +82,17 @@
  #resume {
     font-family: 'calibri', sans-serif;
     color: #1C4351;
-    font-size: 1vw;
-    max-width: 50%;
+    font-size: 1.5vw;
     text-align: center;
-    
+    margin-left: 1em;
  }
 
  #game-name {
     font-family: 'Consolas-title', sans-serif;
-    margin-left: 1vw;
+    margin-left: 1em;
     font-size: 3vw;
     color: #1C4351;
+    text-align: center
  
 }
 
@@ -115,35 +123,32 @@
 
 }
 .mockup-images img {
-    width: 20%;
-    height: 20%;
-    justify-content: space-between;
+    width: 50%;
+    height: 50%;
+    margin-left: 20em;
 }
-.mockup-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-}
+
 
 .container-rules #title-rules {
     font-family: 'Consolas', sans-serif;
     color: #1C4351;
     margin-top: 8vh;
     margin-bottom: 2vh;
+    font-size: 2vw;
 }
 
 .container-rules #text-rules {
     font-family: 'calibri', sans-serif;
     color: #1C4351;
-    font-size: 1vw;
-    max-width: 50%;
+    font-size: 1.5vw;
+    margin-right: y;
 }
 
 #arrow {
     background-color: red;
     border-radius: 50%;
-    height: 12px;
-    width: 10px;
+    height: 20px;
+    width: 18px;
     padding: 5px;
     align-items: center;
     text-align: center;
@@ -157,6 +162,7 @@
     align-items: center; 
     margin-bottom: 4vh;
     margin-top: 1.2vh;
+    font-size: 1.5vw;
 }
 
 .container-download #download {
@@ -164,6 +170,15 @@
     margin-top: 0.5vh;
 }
 
+.container-download a {
+    color: #1C4351;
+    text-decoration: none;
+}
+
+.container-download a:hover {
+    color: #00916C;
+    transition: 0.5s;
+}
 .equipment {
     background-color: #00916C;
     color: white;
@@ -186,7 +201,6 @@
 .equipment img {
     width: 60%;
     height: 60%;
-    justify-content: space-between;
     padding-top: 4vh;
     padding-bottom: 2vh;
 }
@@ -196,7 +210,7 @@
     font-family: 'Consolas-title', sans-serif;
     color: #1C4351;
     margin: auto;
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
     font-size: 20px;
     text-align: center;
     background-color:#FBFBEA;
@@ -206,6 +220,110 @@
 }
 
 
+
+.footer-container {
+    background-image: url('assets/footer.png');
+    background-size: cover;
+    background-repeat: space;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
 .footer {
-    background-color: #00916C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C4351;
+
+}
+
+.footer h5 {
+    font-family: 'Consolas', sans-serif;
+    color: white;
+    margin-bottom: 0.5em;    
+}
+.footer-container {
+    display: flex;
+    font-family: 'calibri', sans-serif;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 1.5vw;
+    margin-right: 30em;
+    max-width: 100%;
+    color: white;
+}
+
+.footer-adress {
+    margin-right: 5em;
+}
+
+.footer-container li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #logo {
+        height: 10%;
+        width: 10%;
+    }
+
+    .topBar .navbar li {
+        margin-left: 20px;
+    }
+
+    .presentation-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8vh;
+        margin-bottom: 8vh;
+    }
+
+    #mockup-box {
+        width: 80%;
+        height: auto;
+    }
+
+    #game-name {
+        font-size: 5vw;
+        margin-top: 1em;
+    }
+
+    #resume {
+        font-size: 4vw;
+    }
+
+    #video-youtube {
+        height: 315px;
+        width: 100%;
+    }
+
+    .mockup-images img {
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .container-rules #text-rules {
+        margin-right: 0;
+    }
+
+    .equipment img {
+        width: 80%;
+        height: auto;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+    }
+
+    .equipment-container {
+        height: auto;
+        width: 80%;
+        margin-bottom: 5vh;
+    }
+
+    .footer-container {
+        font-size: 4vw;
+        margin-right: 0;
+    }
 }
